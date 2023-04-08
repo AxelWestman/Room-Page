@@ -1,0 +1,1324 @@
+:root{
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+        
+
+  /*  
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan' , sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+    
+}
+
+.main{
+    max-width: 1100px;
+    border: 1px solid green;
+    margin: 0 auto;
+    display: grid;
+    background-color:  var(--white);
+    z-index: 1;
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "buy"
+    "image1"
+    "about"
+    "image2" ;
+}
+
+.main__hero{
+    min-height: 500px;
+    width: 500px;
+   
+    background-size: cover;
+    background-position: center;
+    grid-area: main;
+}
+
+.contenedor_slider{
+    width: -10000px;
+    overflow: hidden;
+    
+}
+
+.slider{
+    display: flex;
+   
+    flex-wrap: nowrap;
+    transition: all 0.05s ease-in;
+   
+    overflow: hidden;
+    margin-left: -110%;
+    width: 1000px;
+    
+}
+
+.slider__section{
+    margin-bottom: -10px;
+    width: 1000px;
+    background-size: cover;
+    background-position: center;
+    grid-area: main;
+}
+
+.mobile_slider{
+    position: absolute;
+
+    width: px;
+    z-index: -2
+}
+
+.bi-x-lg{
+    display: none;
+}
+
+.main__nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+
+    
+    z-index: 1;
+    left: 15%;
+
+}
+
+.main__links{
+  display: flex;
+  
+    
+    
+}
+
+.main__logo{
+    margin: 0 auto;
+   
+}
+
+.main__controls{
+    align-self: end;
+    justify-self: end;
+    grid-area: main;
+    background-color: #000;
+    display: flex;
+    width: 200px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__arrows{
+    height: 40%;
+
+}
+
+.main__buy{
+    grid-area: buy;
+}
+
+.main__content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.main__title{
+    color: var(--black);
+}
+
+.main__paragraph{
+    line-height: 1.5;
+    margin: 1em 0 2em;
+    color: var(--dark-gray);
+}
+
+.main__paragraph--about{
+    margin: 1em 0 0 0;
+}
+
+.main__cta{
+    text-decoration: none;
+    color: var(--very-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.main__arrow{
+    margin-left: 20px;
+}
+
+.main__bg{
+    grid-area: image1;
+    min-height: 250px;
+    height: 100%;
+    background-image: url(images/image-about-dark.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main__about{
+    grid-area: about;
+}
+
+.main__bg--second{
+    grid-area: image2;
+    background-image: url(images/image-about-light.jpg);
+}
+}
+
+*/
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    
+
+
+body{
+    font-family: 'Spartan' , sans-serif;
+}
+    
+    .container{
+        width: -50%;
+        margin: 0 auto;
+        padding: 60px 0;
+       
+    }
+    
+    .main{
+       
+        margin-left: -10px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(5, max-content);
+        grid-template-areas: 
+        "main"
+        "buy"
+        "image1"
+        "about"
+        "image2" ;
+    }
+    
+    .main__hero{
+        height: 510px;
+        
+        
+        /* background-image: url("images/desktop-image-hero-1.jpg");*/
+        background-size: cover;
+        background-position: center;
+        grid-area: main;
+        margin-top: -10px;
+    }
+    
+    .contenedor_slider{
+        width: 482px;
+        height: 565px;
+       overflow: hidden;
+        margin: auto;
+        position:relative;
+        
+        
+    }
+    
+    .slider{
+        width: 1553px;
+        display: flex;
+        margin-left: -110%;
+        /*position: relative;*/
+        /*right: 0px;*/
+ }
+    
+    .slider__section{
+        margin-bottom: 50px;
+        margin-left: -27px;
+        z-index: 1;
+        height: 510px;
+        width: 549px;
+        
+        grid-area: main;
+    }
+
+    .image_slider{
+        width: 0;
+        
+    }
+
+    .mobile_slider{
+        margin-top: -25px;
+
+        width: 95%;
+        height: 590px;   
+    }
+    
+     .visible{
+        opacity: 1;
+        visibility: visible;
+       
+    }
+
+    .main__nav{
+        opacity: 1;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        left: 0;
+        bottom: -19%;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 50vmax rgba(0, 0, 0, .5);
+        list-style: none;
+        z-index: 5;
+    }
+    
+
+   
+
+    .bi-x-lg{
+        color: #ececec;
+        
+        
+    }
+    
+
+    .main__hamburguer, main__logo{
+        margin-left: 10px;
+    }
+    
+    .main__links{
+        /*display: none;*/
+        display: flex;
+        gap:1rem;
+        list-style-type: none;
+       flex-direction: column;
+       align-items: start;
+    }
+
+  
+
+    .main__link{
+        text-decoration: none;
+    }
+
+    .main__links li a{
+        color: #ececec;
+    }
+    
+    .main__logo{
+        margin: 0 auto;
+        
+       }
+
+    .imagenes{
+        display: flex;
+        height: 20px;
+        width: 350px;
+        position: absolute;
+        z-index: 3;
+        left: 6%;
+        top: 50px;
+
+        
+
+    }
+    
+    .main__controls{
+        align-self: end;
+        justify-self: end;
+        grid-area: main;
+        background-color: #000;
+        display: flex;
+        width: 100px;
+        height: 60px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+        top: 55px;
+    }
+    
+    .main__arrows{
+        height: 40%;
+    
+    }
+    
+    .main__buy{
+        grid-area: buy;
+    }
+    
+    .main__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+       box-sizing: border-box;
+    
+    }
+
+    .main__content2{
+        margin-top: -40px;
+    }
+    
+    .main__title{
+        color: var(--black);
+        font-size: 40px;
+    }
+
+    .main__title2{
+        font-size: 30px;
+        color: var(--black);
+    }
+    
+    .main__paragraph{
+        line-height: 1.5;
+        margin: -1em 0 2em;
+        color: var(--dark-gray);
+    }
+    
+    .main__paragraph--about{
+        margin: -1em 0 0 0;
+    }
+    
+    .main__cta{
+        text-decoration: none;
+        color: var(--very-dark-gray);
+        text-transform: uppercase;
+        letter-spacing: 12px;
+    }
+    
+    .main__arrow{
+        margin-left: 20px;
+    }
+    
+    .main__bg{
+        grid-area: image1;
+        min-height: 250px;
+        height: 100%;
+        background-image: url(images/image-about-dark.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    
+    .main__about{
+        grid-area: about;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    
+    .main__bg--second{
+        grid-area: image2;
+        background-image: url(images/image-about-light.jpg);
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    body{
+        font-family: 'Spartan' , sans-serif;
+    }
+        
+        .container{
+            width: -50%;
+            margin: 0 auto;
+            padding: 60px 0;
+           
+        }
+        
+        .main{
+           
+            margin-left: -10px;
+            display: grid;
+            grid-template-columns:  1fr;
+            grid-template-rows: repeat(5, max-content);
+            grid-template-areas: 
+            "main"
+            "buy"
+            "image1"
+            "about"
+            "image2" ;
+        }
+        
+        .main__hero{
+            height: 510px;
+            
+            
+            /* background-image: url("images/desktop-image-hero-1.jpg");*/
+            background-size: cover;
+            background-position: center;
+            grid-area: main;
+            margin-top: -10px;
+        }
+        
+        .contenedor_slider{
+            width: 770px;
+            height: 565px;
+           overflow: hidden;
+            margin: auto;
+            position:relative;
+            
+            
+        }
+        
+        .slider{
+            width: 1553px;
+            display: flex;
+            margin-left: -43%;
+            /*position: relative;*/
+            /*right: 0px;*/
+     }
+        
+        .slider__section{
+            margin-bottom: 50px;
+            margin-left: -27px;
+            z-index: 1;
+            height: 510px;
+            width: 549px;
+            
+            grid-area: main;
+        }
+    
+        .image_slider{
+            margin-top: -25px;
+    
+            width: 127%;
+            height: 590px;   
+            
+        }
+    
+        .mobile_slider{
+            width: 0px;
+        }
+        
+         .visible{
+            opacity: 1;
+            visibility: visible;
+           
+        }
+    
+        .main__nav{
+            opacity: 1;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            position: absolute;
+            gap: 1rem;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #1c1c1c;
+            padding: 2rem;
+            box-shadow: 0 0 0 79vmax rgb(0 0 0 / 50%);
+            list-style: none;
+            z-index: 5;
+            
+            
+            
+            
+        }
+    
+       
+    
+        .bi-x-lg{
+            color: #ececec;
+            
+            
+        }
+        
+    
+        .main__hamburguer, main__logo{
+            margin-left: 10px;
+        }
+        
+        .main__links{
+            /*display: none;*/
+            display: flex;
+            gap:1rem;
+            list-style-type: none;
+           flex-direction: column;
+           align-items: start;
+        }
+    
+      
+    
+        .main__link{
+            text-decoration: none;
+        }
+    
+        .main__links li a{
+            color: #ececec;
+        }
+        
+        .main__logo{
+            margin: 0 auto;
+            
+           }
+    
+        .imagenes{
+            display: flex;
+            height: 20px;
+            width: 350px;
+            position: absolute;
+            z-index: 3;
+            left: 6%;
+            top: 50px;
+    
+            
+    
+        }
+        
+        .main__controls{
+            align-self: end;
+            justify-self: end;
+            grid-area: main;
+            background-color: #000;
+            display: flex;
+            width: 100px;
+            height: 60px;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+            top: 55px;
+        }
+        
+        .main__arrows{
+            height: 40%;
+        
+        }
+        
+        .main__buy{
+            grid-area: buy;
+        }
+        
+        .main__content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+           box-sizing: border-box;
+        
+        }
+    
+        .main__content2{
+            margin-top: -40px;
+        }
+        
+        .main__title{
+            color: var(--black);
+            font-size: 40px;
+        }
+    
+        .main__title2{
+            font-size: 30px;
+            color: var(--black);
+        }
+        
+        .main__paragraph{
+            line-height: 1.5;
+            margin: -1em 0 2em;
+            color: var(--dark-gray);
+        }
+        
+        .main__paragraph--about{
+            margin: -1em 0 0 0;
+        }
+        
+        .main__cta{
+            text-decoration: none;
+            color: var(--very-dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 12px;
+        }
+        
+        .main__arrow{
+            margin-left: 20px;
+        }
+        
+        .main__bg{
+            grid-area: image1;
+            min-height: 250px;
+            height: 100%;
+            background-image: url(images/image-about-dark.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+        
+        .main__about{
+            grid-area: about;
+            padding-top: 0px;
+            padding-bottom: 50px;
+        }
+        
+        .main__bg--second{
+            grid-area: image2;
+            background-image: url(images/image-about-light.jpg);
+        }
+        
+}
+
+@media (min-width: 1024px){
+    body{
+        font-family: 'Spartan' , sans-serif;
+    }
+
+    .container{
+       
+        padding: 0px 30px;
+        margin: 0 auto;
+    }
+
+    .main{
+       
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "image1 image1 about about about image2 image2"
+        "image1 image1 about about about image2 image2";
+    }
+
+    .main__hero{
+        min-height: 500px;
+        
+       
+        background-size: cover;
+        background-position: center;
+        grid-area: main;
+    }
+
+  
+   
+    .contenedor_slider{
+       width: 100%;
+       overflow: hidden;
+       margin-top: -30px;
+        
+    }
+
+    .slider{
+        display: flex;
+        flex-wrap: nowrap;
+        transition: all 0.05s ease-in;
+        margin-left: -110%;
+        margin-top: 4px;
+        
+        
+        }
+
+        .slider__section{
+            margin-bottom: -4px;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            grid-area: main;
+            
+            
+            
+            
+        }
+
+
+        .mobile_slider{
+            display: none;
+        }
+
+        .bi-x-lg{
+            display: none;
+        }
+        
+        .main__nav{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            justify-content: space-between;
+        
+            
+            z-index: 1;
+            left: 15%;
+        
+        }
+        
+        .main__links{
+            display: flex;
+            position: relative;
+            top: 18px;
+            left: -60px;
+            list-style: none;
+            gap: 2rem;
+          
+          }
+
+        .main__link{
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .main__logo{
+            margin: 0 auto;
+            position:absolute;
+            top: 60px;
+           left: 40px;
+           
+        }
+        
+        .main__controls{
+            align-self: end;
+            justify-self: end;
+            grid-area: main;
+            background-color: #000;
+            display: flex;
+            width:  25%;
+            height: 15%;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            left: 25%;
+        }
+        
+        .main__arrows{
+            height: 40%;
+        
+        }
+        
+        .main__buy{
+            grid-area: buy;
+        }
+        
+        .main__content{
+            width: 385px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: -6px;
+        
+        }
+
+        #first{
+            margin-top: -45px;
+        }
+
+        
+        
+        .main__title{
+            color: var(--black);
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .main__title2{
+            letter-spacing: 4px;
+            margin-bottom: -2px;
+        }
+        
+        .main__paragraph{
+            line-height: 1.5;
+            margin: 1em 0 2em;
+            color: var(--dark-gray);
+            font-size: 15px;
+        }
+        
+        .main__paragraph--about{
+            margin: 1em 0 0 0;
+        }
+        
+        .main__cta{
+            text-decoration: none;
+            color: var(--very-dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+        
+        .main__arrow{
+            margin-left: 20px;
+        }
+        
+        .main__bg{
+            grid-area: image1;
+            min-height: 250px;
+            /*height: 50%;*/
+            width: 100%;
+            background-image: url(images/image-about-dark.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+        
+        .main__about{
+            grid-area: about;
+        }
+        
+        .main__bg--second{
+            grid-area: image2;
+            background-image: url(images/image-about-light.jpg);
+        }
+
+}
+
+@media (min-width: 1415px) {
+
+
+    body{
+        font-family: 'Spartan' , sans-serif;
+        
+    }
+
+    .container{
+       
+        padding: 0px 30px;
+        margin: 0 auto;
+    }
+
+    .main{
+      
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "image1 image1 about about about image2 image2"
+        "image1 image1 about about about image2 image2";
+    }
+
+    .main__hero{
+        min-height: 500px;
+        
+       margin-top: -20px;
+        background-size: cover;
+        background-position: center;
+        grid-area: main;
+    }
+
+    .main__logo{
+        
+        position: absolute;
+        top: 30px;
+
+        
+    }
+   
+    .contenedor_slider{
+        width: 100%;
+       overflow: hidden;
+        
+    }
+
+    .slider{
+        display: flex;
+        flex-wrap: nowrap;
+        transition: all 0.05s ease-in;
+        margin-left: -106%;
+         margin-top: 24px;
+     }
+
+        .slider__section{
+            margin-bottom: -4px;
+            
+            background-size: cover;
+            background-position: center;
+            grid-area: main;
+        }
+
+        .image_slider{
+            width: 932px;
+        }
+
+        .mobile_slider{
+            display: none;
+        }
+
+        .bi-x-lg{
+            display: none;
+        }
+        
+        .main__nav{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            justify-content: space-between;
+            z-index: 1;
+            left: 15%;
+            
+        
+        }
+        
+        .main__links{
+          display: flex;
+          position: relative;
+          top: 37px;
+          left: -135px;
+          list-style: none;
+          gap: 3rem;
+          
+          
+         }
+
+
+        .main__link{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+
+        
+        .main__logo{
+            margin: 0 auto;
+            position:absolute;
+            top: 60px;
+           left: 40px;
+           
+        }
+        
+        .main__controls{
+            align-self: end;
+            justify-self: end;
+            grid-area: main;
+            background-color: #000;
+            display: flex;
+            width: 25%;
+            height: 15%;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            left: 25%;
+        }
+        
+        .main__arrows{
+            height: 40%;
+        
+        }
+        
+        .main__buy{
+            grid-area: buy;
+        }
+        
+        .main__content{
+            width: 500px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            
+        
+        }
+
+        #first{
+            margin-top: -45px;
+        }
+
+        
+        
+        .main__title{
+            color: var(--black);
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .main__title2{
+            letter-spacing: 4px;
+        }
+        
+        .main__paragraph{
+            line-height: 1.5;
+            margin: 1em 0 2em;
+            color: var(--dark-gray);
+        }
+        
+        .main__paragraph--about{
+            margin: 1em 0 0 0;
+        }
+        
+        .main__cta{
+            text-decoration: none;
+            color: var(--very-dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+        
+        .main__arrow{
+            margin-left: 20px;
+        }
+        
+        .main__bg{
+            grid-area: image1;
+            min-height: 250px;
+            height: 50%;
+            background-image: url(images/image-about-dark.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+        
+        .main__about{
+            grid-area: about;
+        }
+        
+        .main__bg--second{
+            grid-area: image2;
+            background-image: url(images/image-about-light.jpg);
+        }
+        }
+
+@media (min-width: 1584px) {
+    *{
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'Spartan' , sans-serif;
+        
+    }
+    
+    .container{
+       
+        padding: 0px 30px;
+        margin: 0 auto;
+    }
+    
+    .main{
+        width: 1691px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "main main main main buy buy buy"
+        "image1 image1 about about about image2 image2"
+        "image1 image1 about about about image2 image2";
+    }
+    
+    .main__hero{
+        min-height: 500px;
+        
+       margin-top: -70px;
+        background-size: cover;
+        background-position: center;
+        grid-area: main;
+    }
+    
+    .main__logo{
+        
+        position: relative;
+        top: 54px;
+        left: 67px;
+    
+        
+    }
+    
+    .contenedor_slider{
+        width: 942px;
+       overflow: hidden;
+        
+    }
+    
+    .slider{
+        display: flex;
+        flex-wrap: nowrap;
+        transition: all 0.05s ease-in;
+        margin-left: -105%;
+         margin-top: 24px;
+     }
+    
+        .slider__section{
+            margin-bottom: -4px;
+            width: 1000px;
+            background-size: cover;
+            background-position: center;
+            grid-area: main;
+        }
+    
+        .image_slider{
+            width: 989px;
+        }
+    
+        .mobile_slider{
+            display: none;
+        }
+    
+        .bi-x-lg{
+            display: none;
+        }
+        
+        .main__nav{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            justify-content: space-between;
+            z-index: 1;
+            left: 278px;
+            top: 43px;
+            
+        
+        }
+        
+        .main__links{
+          display: flex;
+          position: relative;
+          top: 37px;
+          left: -135px;
+          list-style: none;
+          gap: 3rem;
+          
+          
+         }
+    
+    
+        .main__link{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+    
+        
+        .main__logo{
+            margin: 0 auto;
+            position:relative;
+            top: 115px;
+           left: 40px;
+           
+        }
+        
+        .main__controls{
+            align-self: end;
+            justify-self: end;
+            grid-area: main;
+            background-color: #000;
+            display: flex;
+            width: 264px;
+            height: 15%;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            left: 240px;
+        }
+        
+        .main__arrows{
+            height: 40%;
+        
+        }
+        
+        .main__buy{
+            grid-area: buy;
+        }
+        
+        .main__content{
+            width: 500px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            
+        
+        }
+    
+        #first{
+            margin-top: -45px;
+        }
+    
+        
+        
+        .main__title{
+            color: var(--black);
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    
+        .main__title2{
+            letter-spacing: 4px;
+        }
+        
+        .main__paragraph{
+            line-height: 1.5;
+            margin: 1em 0 2em;
+            color: var(--dark-gray);
+        }
+        
+        .main__paragraph--about{
+            margin: 1em 0 0 0;
+        }
+        
+        .main__cta{
+            text-decoration: none;
+            color: var(--very-dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+        
+        .main__arrow{
+            margin-left: 20px;
+        }
+        
+        .main__bg{
+            grid-area: image1;
+            min-height: 250px;
+            height: 50%;
+            background-image: url(images/image-about-dark.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+        
+        .main__about{
+            grid-area: about;
+        }
+        
+        .main__bg--second{
+            grid-area: image2;
+            background-image: url(images/image-about-light.jpg);
+        }
+    
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <section class="main__hero">
+      
+      <div class="imagenes">
+      <img src="images/icon-hamburger.svg" class="main__hamburguer" id="abrir">
+      
+      <img src="images/logo.svg" class="main__logo">
+      </div> 
+
+      <nav class="main__nav container animate__animated" id="nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" id="cerrar">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </svg>
+        
+      <ul class="main__links">
+        <li class="main__list"><a href="#" class="main__link">Home</a></li>
+        <li class="main__list"><a href="#" class="main__link">Shop</a></li>
+        <li class="main__list"><a href="#" class="main__link">About</a></li>
+        <li class="main__list"><a href="#" class="main__link">Contact</a></li>
+      </ul>
+      </nav>
+      <div class="contenedor_slider">
+        <div class="slider" id="slider">
+         
+          <div class="slider__section">
+            <img src="images/desktop-image-hero-1.jpg" class="image_slider">
+            <img src="images/mobile-image-hero-1.jpg" class="mobile_slider">
+          </div>
+
+          <div class="slider__section">
+            <img src="images/desktop-image-hero-2.jpg" class="image_slider">
+            <img src="images/mobile-image-hero-2.jpg" class="mobile_slider">
+          </div>
+          
+          
+          <div class="slider__section">
+            <img src="images/desktop-image-hero-3.jpg" class="image_slider">
+            <img src="images/mobile-image-hero-3.jpg" class="mobile_slider">
+          </div>
+
+         
+          
+          
+          
+          
+        </div>
+    </div>
+      
+    </section>
+
+    <section class="main__buy container">
+      <div class="main__content "  id="first">
+        <h2 class="main__title">Discover innovative ways to decorate</h2>
+        <p class="main__paragraph">We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.</p>
+
+          <a href="#" class="main__cta">Shop Now<img src="images/icon-arrow.svg" class="main__arrow"></a>
+      </div>
+    </section>
+
+    <section class="main__bg">
+
+    </section>
+
+
+    <section class="main__about container">
+      <div class="main__content ">
+        <h3 class="main__title2">ABOUT OUR FURNITURE</h3>
+        <p class="main__paragraph main__paragraph--about"> Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </div>
+    </section>
+
+    <section class="main__bg main__bg--second"></section>
+
+    <div class="main__controls">
+      <a href="#"><img src="images/icon-angle-left.svg" class="main__arrows" id="izquierda"></a>
+      <a href="#"><img src="images/icon-angle-right.svg" class="main__arrows" id="derecha"></a>
+    </div>
+
+  </main>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Axel Westman</a>.
+  </div>
+
+
+  <script src="scripts/main.js"> </script>
+
+</body>
+</html>
